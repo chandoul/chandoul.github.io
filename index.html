@@ -1,202 +1,420 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Age of Empires II Easy Manager</title>
+        <link rel="icon" type="image/x-icon" href="assets/ico/aoeii.ico" />
+        <link rel="stylesheet" href="style/style.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Age of Empires II Easy Manager</title>
-    <link rel="icon" type="image/x-icon" href="assets/ico/aoeii.ico">
-    <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-
-<body>
-    <h1 class="title">Age of Empires II: AoK & AoC Easy Manager</h1>
-    <p class="about">Humbly made by Smile &#128154;</p>
-    <button class="installer" onclick="getInstaller()"> <i class="fa fa-download"></i> Download Age of Empires II Easy
-        Manager</button>
-    <br>
-    <br>
-    <img class="main" src="https://github.com/Chandoul/aoeii_easy_manager/blob/main/Screenshot.png?raw=true" alt="">
-    <br>
-    <br>
-    <img class="fp" src="assets/gif/fp.webp">
-    <script src="js/main.js"></script>
-    <div class="steps">
-        <h1 class="title" id="HowToUse">How to use it</h1>
-        <p>Assuming you downloaded and installed the application correctly on your computer.</p>
-        <h2>My Game</h2>
-        <img class="main" src="https://github.com/Chandoul/aoeii_easy_manager/blob/main/Game.png?raw=true" alt="">
-        <div class="stepsinfo">
-            <ul>
-                <li><button class="OptionButton">Select</button> Select your game location locally.
-                </li>
-                <li><button class="OptionButton">Open The
-                        Selected</button> Open the selected location.</li>
-                <li><button class="OptionButton">Select from
-                        GameRanger</button> Checks the game location in your computer and tries to load it if there is
-                    any.</li>
-                <li><button class="OptionButton">Download the game</button> Asks for a download location then starts
-                    downloading the game.</li>
-                <li><button class="OptionButton"> Delete the
-                        game</button> Selects which game, <button class="OptionButton">Uninstall</button> Confirm
-                    uninstall.</li>
-                <li>Finally an optional choice is to choose to update your game desktop icons, keep it on in order to
-                    update them if you use multiple game locations.</li>
-            </ul>
-        </div>
-        <h2>Version</h2>
-        <img class="main" src="https://github.com/Chandoul/aoeii_easy_manager/blob/main/Version.png?raw=true" alt="">
-        <div class="stepsinfo">
-            <ul>
-                <li><button class="OptionButton">2.0</button> <button class="OptionButton">2.0a</button> <button
-                        class="OptionButton">2.0b</button> Apply a version for Age of Empires II The Age of Kings.
-                </li>
-                <li><button class="OptionButton">1.0</button> <button class="OptionButton">1.0c</button> <button
-                        class="OptionButton">1.0e</button> <button class="OptionButton">1.1</button> <button
-                        class="OptionButton">1.5</button> Apply a version for Age of
-                    Empires II The Conquerors.
-                </li>
-                <li><button class="OptionButton">2.2</button> Apply a version for Age of Empires II The Forgotten
-                    Empires.
-                </li>
-            </ul>
-        </div>
-        <h2>Patch/Fix</h2>
-        <img class="main" src="https://github.com/Chandoul/aoeii_easy_manager/blob/main/Fix.png?raw=true" alt="">
-        <div class="stepsinfo">
-            <ul>
-                <li><button class="OptionButton">None</button> Clear a fix if there is any.
-                </li>
-                <li><button class="OptionButton">Fix v0</button> <button class="OptionButton">Fix v1</button> <button
-                        class="OptionButton">Fix v2</button> <button class="OptionButton">Fix v3</button> <button
-                        class="OptionButton">Fix v4</button> <button class="OptionButton">Fix v5</button> Apply a fix
-                    for Age of Empires II.
-                </li>
-                <li>In the right side, you will find some options regarding those fixs, those fix generally do the
-                    following enhancement:
-                    <ul>
-                        <li>Widescreen (Forces your desktop resolution in the game)</li>
-                        <li>Overlay tech tree (Shows a resume in icons equivalent to your civlization)</li>
-                        <li>Villager per resources (Wood, Food, Gold, Stone, villager count displayed next to the
-                            resources icons)</li>
-                        <li>Water animation (Seas and lakes are more realistic)</li>
-                        <li>Colored signal (Signals shown in colors equivalent to each player)</li>
-                        <li>Auto farm queue (Villager automatically reseed their farms)</li>
-                        <li>MQ (Multiple Queue, helps in creating units from multiple selected building with one click)
-                        </li>
-                        <li>Civilization easy display (Displays civilization name next to each score)</li>
-                    </ul>
-                </li>
-                <li><button class="OptionButton">Fix v5</button> Includes all those features, so it is highly
-                    recommended to use it, because the lower version fixs may miss some those enhancement</li>
-            </ul>
-        </div>
-        <h2>Language</h2>
-        <img class="main" src="https://github.com/Chandoul/aoeii_easy_manager/blob/main/Lng.png?raw=true" alt="">
-        <div class="stepsinfo">
-            <ul>
-                <li>Changes the game interface language.
-                </li>
-            </ul>
-        </div>
-        <h2>Visual mods</h2>
-        <img class="main" src="https://github.com/Chandoul/aoeii_easy_manager/blob/main/VM.png?raw=true" alt="">
-        <div class="stepsinfo">
-            <ul>
-                <li>These mods are installed locally, means other players do not need to have them if you did install
-                    any of them.</li>
-                <li><button class="OptionButton">Install [Mode Name]</button> Installs a visual mod.</li>
-                <li><button class="OptionButton">Uninstall [Mode Name]</button> Uninstalls a visual mod.</li>
-                <li>Of course this is not perfect because I didn't include all visual mods out there, instead only the
-                    most important ones, plus if you wish to have your owns mods just let me know, and then I will see
-                    if I can add them.</li>
-            </ul>
-        </div>
-        <h2>Data mods</h2>
-        <img class="main" src="https://github.com/Chandoul/aoeii_easy_manager/blob/main/DM.png?raw=true" alt="">
-        <div class="stepsinfo">
-            <ul>
-                <li>Unlike the visual mods, these mods must be installed globally, means other players must have them if
-                    you did install any of them.</li>
-                <li><button class="OptionButton">Install [Mode Name]</button> Installs a data mod.</li>
-                <li><button class="OptionButton">Uninstall [Mode Name]</button> Uninstalls a data mod.</li>
-                <li>Of course this is not perfect because I didn't include all data mods out there, plus if you wish to
-                    have your owns mods just let me know, and then I will see if I can add them.</li>
-            </ul>
-        </div>
-        <h2>Hide All IP trial resetter</h2>
-        <img class="main" src="https://github.com/Chandoul/aoeii_easy_manager/blob/main/HAI.png?raw=true" alt="">
-        <div class="stepsinfo">
-            <ul>
-                <li>This is a vulnerablity, <button class="OptionButton">Hide All IP Trial Reset</button> clears the
-                    registery so you can have new trial period of two days.</li>
-                <li>There are 6 attemps to achive this, if none of them worked, try the same process again.</li>
-            </ul>
-        </div>
-        <h2>Shortcuts / Keys remapper</h2>
-        <img class="main" src="https://github.com/Chandoul/aoeii_easy_manager/blob/main/AHK.png?raw=true" alt="">
-        <div class="stepsinfo">
-            <ul>
-                <li>If you got some knowledge with AutoHotkey scripting language you can bind or remap your keyboard
-                    keys to fire some other custom keys.</li>
-                <li>Currently there are two custom options:</li>
+    <body>
+        <h1 class="title">Age of Empires II: AoK & AoC Easy Manager</h1>
+        <p class="about">Humbly made by Smile &#128154;</p>
+        <button class="installer" onclick="getInstaller()">
+            <i class="fa fa-download"></i> Download Age of Empires II Easy
+            Manager
+        </button>
+        <br />
+        <button class="updater" onclick="getUpdater()">
+            <i class="fa fa-update"></i> Download Update v3.9
+        </button>
+        <br />
+        <img
+            class="main"
+            src="https://github.com/Chandoul/aoeii_easy_manager/blob/main/Screenshot.png?raw=true"
+            alt=""
+        />
+        <br />
+        <br />
+        <img class="fp" src="assets/gif/fp.webp" />
+        <script src="js/main.js"></script>
+        <div class="steps">
+            <h1 class="title" id="HowToUse">How to use it</h1>
+            <p>
+                Assuming you downloaded and installed the application correctly
+                on your computer.
+            </p>
+            <h2>My Game</h2>
+            <img
+                class="main"
+                src="https://github.com/Chandoul/aoeii_easy_manager/blob/main/Game.png?raw=true"
+                alt=""
+            />
+            <div class="stepsinfo">
                 <ul>
-                    <li><button class="OptionButton">Win</button> + <button class="OptionButton">Q</button> Exits the
-                        game, in case you got stucked.</li>
-                    <li><button class="OptionButton">Alt</button> + <button class="OptionButton">Right Mouse
-                            Button</button> Unselects one unit on a group selection and sends a right click.</li>
+                    <li>
+                        <button class="OptionButton">Select</button> Select your
+                        game location locally.
+                    </li>
+                    <li>
+                        <button class="OptionButton">Open The Selected</button>
+                        Open the selected location.
+                    </li>
+                    <li>
+                        <button class="OptionButton">
+                            Select from GameRanger
+                        </button>
+                        Checks the game location in your computer and tries to
+                        load it if there is any.
+                    </li>
+                    <li>
+                        <button class="OptionButton">Download the game</button>
+                        Asks for a download location then starts downloading the
+                        game.
+                    </li>
+                    <li>
+                        <button class="OptionButton">Delete the game</button>
+                        Selects which game,
+                        <button class="OptionButton">Uninstall</button> Confirm
+                        uninstall.
+                    </li>
+                    <li>
+                        Finally an optional choice is to choose to update your
+                        game desktop icons, keep it on in order to update them
+                        if you use multiple game locations.
+                    </li>
                 </ul>
-            </ul>
+            </div>
+            <h2>Version</h2>
+            <img
+                class="main"
+                src="https://github.com/Chandoul/aoeii_easy_manager/blob/main/Version.png?raw=true"
+                alt=""
+            />
+            <div class="stepsinfo">
+                <ul>
+                    <li>
+                        <button class="OptionButton">2.0</button>
+                        <button class="OptionButton">2.0a</button>
+                        <button class="OptionButton">2.0b</button> Apply a
+                        version for Age of Empires II The Age of Kings.
+                    </li>
+                    <li>
+                        <button class="OptionButton">1.0</button>
+                        <button class="OptionButton">1.0c</button>
+                        <button class="OptionButton">1.0e</button>
+                        <button class="OptionButton">1.1</button>
+                        <button class="OptionButton">1.5</button> Apply a
+                        version for Age of Empires II The Conquerors.
+                    </li>
+                    <li>
+                        <button class="OptionButton">2.2</button> Apply a
+                        version for Age of Empires II The Forgotten Empires.
+                    </li>
+                </ul>
+            </div>
+            <h2>Patch/Fix</h2>
+            <img
+                class="main"
+                src="https://github.com/Chandoul/aoeii_easy_manager/blob/main/Fix.png?raw=true"
+                alt=""
+            />
+            <div class="stepsinfo">
+                <ul>
+                    <li>
+                        <button class="OptionButton">None</button> Clear a fix
+                        if there is any.
+                    </li>
+                    <li>
+                        <button class="OptionButton">Fix v0</button>
+                        <button class="OptionButton">Fix v1</button>
+                        <button class="OptionButton">Fix v2</button>
+                        <button class="OptionButton">Fix v3</button>
+                        <button class="OptionButton">Fix v4</button>
+                        <button class="OptionButton">Fix v5</button> Apply a fix
+                        for Age of Empires II.
+                    </li>
+                    <li>
+                        In the right side, you will find some options regarding
+                        those fixs, those fix generally do the following
+                        enhancement:
+                        <ul>
+                            <li>
+                                Widescreen (Forces your desktop resolution in
+                                the game)
+                            </li>
+                            <li>
+                                Overlay tech tree (Shows a resume in icons
+                                equivalent to your civlization)
+                            </li>
+                            <li>
+                                Villager per resources (Wood, Food, Gold, Stone,
+                                villager count displayed next to the resources
+                                icons)
+                            </li>
+                            <li>
+                                Water animation (Seas and lakes are more
+                                realistic)
+                            </li>
+                            <li>
+                                Colored signal (Signals shown in colors
+                                equivalent to each player)
+                            </li>
+                            <li>
+                                Auto farm queue (Villager automatically reseed
+                                their farms)
+                            </li>
+                            <li>
+                                MQ (Multiple Queue, helps in creating units from
+                                multiple selected building with one click)
+                            </li>
+                            <li>
+                                Civilization easy display (Displays civilization
+                                name next to each score)
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <button class="OptionButton">Fix v5</button> Includes
+                        all those features, so it is highly recommended to use
+                        it, because the lower version fixs may miss some those
+                        enhancement
+                    </li>
+                </ul>
+            </div>
+            <h2>Language</h2>
+            <img
+                class="main"
+                src="https://github.com/Chandoul/aoeii_easy_manager/blob/main/Lng.png?raw=true"
+                alt=""
+            />
+            <div class="stepsinfo">
+                <ul>
+                    <li>Changes the game interface language.</li>
+                </ul>
+            </div>
+            <h2>Visual mods</h2>
+            <img
+                class="main"
+                src="https://github.com/Chandoul/aoeii_easy_manager/blob/main/VM.png?raw=true"
+                alt=""
+            />
+            <div class="stepsinfo">
+                <ul>
+                    <li>
+                        These mods are installed locally, means other players do
+                        not need to have them if you did install any of them.
+                    </li>
+                    <li>
+                        <button class="OptionButton">
+                            Install [Mode Name]
+                        </button>
+                        Installs a visual mod.
+                    </li>
+                    <li>
+                        <button class="OptionButton">
+                            Uninstall [Mode Name]
+                        </button>
+                        Uninstalls a visual mod.
+                    </li>
+                    <li>
+                        Of course this is not perfect because I didn't include
+                        all visual mods out there, instead only the most
+                        important ones, plus if you wish to have your owns mods
+                        just let me know, and then I will see if I can add them.
+                    </li>
+                </ul>
+            </div>
+            <h2>Data mods</h2>
+            <img
+                class="main"
+                src="https://github.com/Chandoul/aoeii_easy_manager/blob/main/DM.png?raw=true"
+                alt=""
+            />
+            <div class="stepsinfo">
+                <ul>
+                    <li>
+                        Unlike the visual mods, these mods must be installed
+                        globally, means other players must have them if you did
+                        install any of them.
+                    </li>
+                    <li>
+                        <button class="OptionButton">
+                            Install [Mode Name]
+                        </button>
+                        Installs a data mod.
+                    </li>
+                    <li>
+                        <button class="OptionButton">
+                            Uninstall [Mode Name]
+                        </button>
+                        Uninstalls a data mod.
+                    </li>
+                    <li>
+                        Of course this is not perfect because I didn't include
+                        all data mods out there, plus if you wish to have your
+                        owns mods just let me know, and then I will see if I can
+                        add them.
+                    </li>
+                </ul>
+            </div>
+            <h2>Hide All IP trial resetter</h2>
+            <img
+                class="main"
+                src="https://github.com/Chandoul/aoeii_easy_manager/blob/main/HAI.png?raw=true"
+                alt=""
+            />
+            <div class="stepsinfo">
+                <ul>
+                    <li>
+                        This is a vulnerablity,
+                        <button class="OptionButton">
+                            Hide All IP Trial Reset
+                        </button>
+                        clears the registery so you can have new trial period of
+                        two days.
+                    </li>
+                    <li>
+                        There are 6 attemps to achive this, if none of them
+                        worked, try the same process again.
+                    </li>
+                </ul>
+            </div>
+            <h2>Shortcuts / Keys remapper</h2>
+            <img
+                class="main"
+                src="https://github.com/Chandoul/aoeii_easy_manager/blob/main/AHK.png?raw=true"
+                alt=""
+            />
+            <div class="stepsinfo">
+                <ul>
+                    <li>
+                        If you got some knowledge with AutoHotkey scripting
+                        language you can bind or remap your keyboard keys to
+                        fire some other custom keys.
+                    </li>
+                    <li>Currently there are two custom options:</li>
+                    <ul>
+                        <li>
+                            <button class="OptionButton">Win</button> +
+                            <button class="OptionButton">Q</button> Exits the
+                            game, in case you got stucked.
+                        </li>
+                        <li>
+                            <button class="OptionButton">Alt</button> +
+                            <button class="OptionButton">
+                                Right Mouse Button
+                            </button>
+                            Unselects one unit on a group selection and sends a
+                            right click.
+                        </li>
+                    </ul>
+                </ul>
+            </div>
+            <h2>Direct Draw Fix</h2>
+            <img
+                class="main"
+                src="https://github.com/Chandoul/aoeii_easy_manager/blob/main/DDF.png?raw=true"
+                alt=""
+            />
+            <div class="stepsinfo">
+                <ul>
+                    <li>
+                        An engine created in order to run old games in the
+                        correct setting in the recent copy of windows.
+                    </li>
+                    <li>
+                        This fix is very important if you want to have the best
+                        game experience
+                    </li>
+                    <li>
+                        <button class="OptionButton">
+                            Apply the direct draw fix
+                        </button>
+                        Applies direct draw fix.
+                    </li>
+                    <li>
+                        <button class="OptionButton">
+                            Remove the direct draw fix
+                        </button>
+                        Removes direct draw fix.
+                    </li>
+                    <li>
+                        <button class="OptionButton">
+                            Age of Empires II Direct Draw Options
+                        </button>
+                        Opens the Age of Empires II Direct Draw options window.
+                    </li>
+                    <li>
+                        <button class="OptionButton">
+                            The Conquerors Direct Draw Options
+                        </button>
+                        Opens The Conquerors Direct Draw options window.
+                    </li>
+                </ul>
+            </div>
+            <h2>GameRanger Account Switcher</h2>
+            <img
+                class="main"
+                src="https://github.com/Chandoul/aoeii_easy_manager/blob/main/GRAS.png?raw=true"
+                alt=""
+            />
+            <div class="stepsinfo">
+                <ul>
+                    <li>
+                        <button class="OptionButton">Add</button> Adds an
+                        already logged account to the account list.
+                    </li>
+                    <li>
+                        <button class="OptionButton">Remove</button> Removes an
+                        already added account to the account list.
+                    </li>
+                    <li>
+                        <button class="OptionButton">→ Login</button> Login with
+                        the selected account from the list.
+                    </li>
+                    <li>
+                        <button class="OptionButton">→ Restart</button> Restarts
+                        GameRanger.
+                    </li>
+                    <li>
+                        <button class="OptionButton">+ Create New</button>
+                        Launchs the process where you can create a new
+                        GameRanger account.
+                    </li>
+                </ul>
+            </div>
+            <h2>Scenarios</h2>
+            <img
+                class="main"
+                src="https://github.com/Chandoul/aoeii_easy_manager/blob/main/Scx.png?raw=true"
+                alt=""
+            />
+            <div class="stepsinfo">
+                <ul>
+                    <li>
+                        Based on a friend request I have added this option to
+                        extract Hints and many other info from scenario files
+                        for a quick access of the correct game setting.
+                    </li>
+                </ul>
+            </div>
+            <div class="hih">
+                <h2>Hope it helps</h2>
+                <ul>
+                    <li>
+                        The main goal of this application was to collect all the
+                        useful patchs, fixs related to the game.
+                    </li>
+                    <li>
+                        Safty, all the options you have read are tested by me
+                        and many other players and their reviews was positive.
+                    </li>
+                    <li>
+                        Of course there is nothing is perfect, so your feedbacks
+                        are really important.
+                    </li>
+                    <li>
+                        Feel free to contact me at:
+                        <b>Chandoul.Mohamed26@Gmail.Com</b>.
+                    </li>
+                </ul>
+            </div>
         </div>
-        <h2>Direct Draw Fix</h2>
-        <img class="main" src="https://github.com/Chandoul/aoeii_easy_manager/blob/main/DDF.png?raw=true" alt="">
-        <div class="stepsinfo">
-            <ul>
-                <li>An engine created in order to run old games in the correct setting in the recent copy of windows.
-                </li>
-                <li>This fix is very important if you want to have the best game experience</li>
-                <li><button class="OptionButton">Apply the direct draw fix</button> Applies direct draw fix.</li>
-                <li><button class="OptionButton">Remove the direct draw fix</button> Removes direct draw fix.</li>
-                <li><button class="OptionButton">Age of Empires II Direct Draw Options</button> Opens the Age of Empires
-                    II Direct Draw options window.</li>
-                <li><button class="OptionButton">The Conquerors Direct Draw Options</button> Opens The Conquerors Direct
-                    Draw options window.</li>
-            </ul>
-        </div>
-        <h2>GameRanger Account Switcher</h2>
-        <img class="main" src="https://github.com/Chandoul/aoeii_easy_manager/blob/main/GRAS.png?raw=true" alt="">
-        <div class="stepsinfo">
-            <ul>
-                <li><button class="OptionButton">Add</button> Adds an already logged account to the account list.</li>
-                <li><button class="OptionButton">Remove</button> Removes an already added account to the account list.
-                </li>
-                <li><button class="OptionButton">→ Login</button> Login with the selected account from the list.</li>
-                <li><button class="OptionButton">→ Restart</button> Restarts GameRanger.</li>
-                <li><button class="OptionButton">+ Create New</button> Launchs the process where you can create a new
-                    GameRanger account.</li>
-            </ul>
-        </div>
-        <h2>Scenarios</h2>
-        <img class="main" src="https://github.com/Chandoul/aoeii_easy_manager/blob/main/Scx.png?raw=true" alt="">
-        <div class="stepsinfo">
-            <ul>
-                <li>Based on a friend request I have added this option to extract Hints and many other info from
-                    scenario files for a quick access of the correct game setting.</li>
-            </ul>
-        </div>
-        <div class="hih">
-            <h2>Hope it helps</h2>
-            <ul>
-                <li>The main goal of this application was to collect all the useful patchs, fixs related to the game.
-                </li>
-                <li>Safty, all the options you have read are tested by me and many other players and their reviews was
-                    positive.</li>
-                <li>Of course there is nothing is perfect, so your feedbacks are really important.</li>
-                <li>Feel free to contact me at: <b>Chandoul.Mohamed26@Gmail.Com</b>.</li>
-            </ul>
-        </div>
-    </div>
-</body>
-
+    </body>
 </html>
