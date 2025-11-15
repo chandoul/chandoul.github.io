@@ -3,73 +3,71 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Age of Empires II Easy Manager</title>
-        <link rel="icon" type="image/x-icon" href="assets/ico/aoeii.ico" />
-        <link rel="stylesheet" href="style/style.css" />
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        <meta
+            http-equiv="Content-Security-Policy"
+            content="script-src 'self'"
         />
+        <title>Document</title>
+        <link
+            rel="icon"
+            type="image/x-icon"
+            href="renderer/assets/ico/aoeii.ico"
+        />
+        <link rel="stylesheet" href="renderer/style.css" />
     </head>
 
     <body>
-        <h1 class="title">Age of Empires II: AoK & AoC Easy Manager</h1>
-        <p class="about">Humbly made by Smile &#128154;</p>
-        <button class="installer" onclick="getInstaller()">
-            <i class="fa fa-download"></i> Download Age of Empires II Easy
-            Manager
-        </button>
-        <br />
-        <button class="updater" onclick="getUpdater()">
-            <i class="fa fa-download"></i> Download Update v3.9
-        </button>
+        <h1 id="title"></h1>
+        <p id="about"></p>
+        <button id="installer"></button>
         <br />
         <img
-            class="main"
-            src="https://github.com/Chandoul/aoeii_easy_manager/blob/main/Screenshot.png?raw=true"
+            id="preview"
+            src="https://github.com/chandoul/aoeii_em/blob/master/screenshots/aoeii_em.png?raw=true"
             alt=""
         />
         <br />
         <br />
-        <img class="fp" src="assets/gif/fp.webp" />
-        <div class="steps">
-            <h1 class="title" id="HowToUse">How to use it</h1>
+        <img id="fp" src="renderer/assets/gif/fp.webp" />
+        <!--
+        <div id="steps">
+            <h1 id="howtouse">How to use it</h1>
             <p>
                 Assuming you downloaded and installed the application correctly
                 on your computer.
             </p>
             <h2>My Game</h2>
             <img
-                class="main"
+                id="main"
                 src="https://github.com/Chandoul/aoeii_easy_manager/blob/main/Game.png?raw=true"
                 alt=""
             />
-            <div class="stepsinfo">
+            <div id="stepsinfo">
                 <ul>
                     <li>
-                        <button class="OptionButton">Select</button> Select your
+                        <button id="OptionButton">Select</button>Select your
                         game location locally.
                     </li>
                     <li>
-                        <button class="OptionButton">Open The Selected</button>
+                        <button id="OptionButton">Open The Selected</button>
                         Open the selected location.
                     </li>
                     <li>
-                        <button class="OptionButton">
+                        <button id="OptionButton">
                             Select from GameRanger
                         </button>
                         Checks the game location in your computer and tries to
                         load it if there is any.
                     </li>
                     <li>
-                        <button class="OptionButton">Download the game</button>
+                        <button id="OptionButton">Download the game</button>
                         Asks for a download location then starts downloading the
                         game.
                     </li>
                     <li>
-                        <button class="OptionButton">Delete the game</button>
+                        <button id="OptionButton">Delete the game</button>
                         Selects which game,
-                        <button class="OptionButton">Uninstall</button> Confirm
+                        <button id="OptionButton">Uninstall</button> Confirm
                         uninstall.
                     </li>
                     <li>
@@ -81,51 +79,51 @@
             </div>
             <h2>Version</h2>
             <img
-                class="main"
+                id="main"
                 src="https://github.com/Chandoul/aoeii_easy_manager/blob/main/Version.png?raw=true"
                 alt=""
             />
-            <div class="stepsinfo">
+            <div id="stepsinfo">
                 <ul>
                     <li>
-                        <button class="OptionButton">2.0</button>
-                        <button class="OptionButton">2.0a</button>
-                        <button class="OptionButton">2.0b</button> Apply a
-                        version for Age of Empires II The Age of Kings.
+                        <button id="OptionButton">2.0</button>
+                        <button id="OptionButton">2.0a</button>
+                        <button id="OptionButton">2.0b</button> Apply a version
+                        for Age of Empires II The Age of Kings.
                     </li>
                     <li>
-                        <button class="OptionButton">1.0</button>
-                        <button class="OptionButton">1.0c</button>
-                        <button class="OptionButton">1.0e</button>
-                        <button class="OptionButton">1.1</button>
-                        <button class="OptionButton">1.5</button> Apply a
-                        version for Age of Empires II The Conquerors.
+                        <button id="OptionButton">1.0</button>
+                        <button id="OptionButton">1.0c</button>
+                        <button id="OptionButton">1.0e</button>
+                        <button id="OptionButton">1.1</button>
+                        <button id="OptionButton">1.5</button> Apply a version
+                        for Age of Empires II The Conquerors.
                     </li>
                     <li>
-                        <button class="OptionButton">2.2</button> Apply a
-                        version for Age of Empires II The Forgotten Empires.
+                        <button id="OptionButton">2.2</button> Apply a version
+                        for Age of Empires II The Forgotten Empires.
                     </li>
                 </ul>
             </div>
             <h2>Patch/Fix</h2>
             <img
-                class="main"
+                id="main"
                 src="https://github.com/Chandoul/aoeii_easy_manager/blob/main/Fix.png?raw=true"
                 alt=""
             />
-            <div class="stepsinfo">
+            <div id="stepsinfo">
                 <ul>
                     <li>
-                        <button class="OptionButton">None</button> Clear a fix
-                        if there is any.
+                        <button id="OptionButton">None</button> Clear a fix if
+                        there is any.
                     </li>
                     <li>
-                        <button class="OptionButton">Fix v0</button>
-                        <button class="OptionButton">Fix v1</button>
-                        <button class="OptionButton">Fix v2</button>
-                        <button class="OptionButton">Fix v3</button>
-                        <button class="OptionButton">Fix v4</button>
-                        <button class="OptionButton">Fix v5</button> Apply a fix
+                        <button id="OptionButton">Fix v0</button>
+                        <button id="OptionButton">Fix v1</button>
+                        <button id="OptionButton">Fix v2</button>
+                        <button id="OptionButton">Fix v3</button>
+                        <button id="OptionButton">Fix v4</button>
+                        <button id="OptionButton">Fix v5</button> Apply a fix
                         for Age of Empires II.
                     </li>
                     <li>
@@ -169,46 +167,42 @@
                         </ul>
                     </li>
                     <li>
-                        <button class="OptionButton">Fix v5</button> Includes
-                        all those features, so it is highly recommended to use
-                        it, because the lower version fixs may miss some those
+                        <button id="OptionButton">Fix v5</button> Includes all
+                        those features, so it is highly recommended to use it,
+                        because the lower version fixs may miss some those
                         enhancement
                     </li>
                 </ul>
             </div>
             <h2>Language</h2>
             <img
-                class="main"
+                id="main"
                 src="https://github.com/Chandoul/aoeii_easy_manager/blob/main/Lng.png?raw=true"
                 alt=""
             />
-            <div class="stepsinfo">
+            <div id="stepsinfo">
                 <ul>
                     <li>Changes the game interface language.</li>
                 </ul>
             </div>
             <h2>Visual mods</h2>
             <img
-                class="main"
+                id="main"
                 src="https://github.com/Chandoul/aoeii_easy_manager/blob/main/VM.png?raw=true"
                 alt=""
             />
-            <div class="stepsinfo">
+            <div id="stepsinfo">
                 <ul>
                     <li>
                         These mods are installed locally, means other players do
                         not need to have them if you did install any of them.
                     </li>
                     <li>
-                        <button class="OptionButton">
-                            Install [Mode Name]
-                        </button>
+                        <button id="OptionButton">Install [Mode Name]</button>
                         Installs a visual mod.
                     </li>
                     <li>
-                        <button class="OptionButton">
-                            Uninstall [Mode Name]
-                        </button>
+                        <button id="OptionButton">Uninstall [Mode Name]</button>
                         Uninstalls a visual mod.
                     </li>
                     <li>
@@ -221,11 +215,11 @@
             </div>
             <h2>Data mods</h2>
             <img
-                class="main"
+                id="main"
                 src="https://github.com/Chandoul/aoeii_easy_manager/blob/main/DM.png?raw=true"
                 alt=""
             />
-            <div class="stepsinfo">
+            <div id="stepsinfo">
                 <ul>
                     <li>
                         Unlike the visual mods, these mods must be installed
@@ -233,15 +227,11 @@
                         install any of them.
                     </li>
                     <li>
-                        <button class="OptionButton">
-                            Install [Mode Name]
-                        </button>
+                        <button id="OptionButton">Install [Mode Name]</button>
                         Installs a data mod.
                     </li>
                     <li>
-                        <button class="OptionButton">
-                            Uninstall [Mode Name]
-                        </button>
+                        <button id="OptionButton">Uninstall [Mode Name]</button>
                         Uninstalls a data mod.
                     </li>
                     <li>
@@ -254,15 +244,15 @@
             </div>
             <h2>Hide All IP trial resetter</h2>
             <img
-                class="main"
+                id="main"
                 src="https://github.com/Chandoul/aoeii_easy_manager/blob/main/HAI.png?raw=true"
                 alt=""
             />
-            <div class="stepsinfo">
+            <div id="stepsinfo">
                 <ul>
                     <li>
                         This is a vulnerablity,
-                        <button class="OptionButton">
+                        <button id="OptionButton">
                             Hide All IP Trial Reset
                         </button>
                         clears the registery so you can have new trial period of
@@ -276,11 +266,11 @@
             </div>
             <h2>Shortcuts / Keys remapper</h2>
             <img
-                class="main"
+                id="main"
                 src="https://github.com/Chandoul/aoeii_easy_manager/blob/main/AHK.png?raw=true"
                 alt=""
             />
-            <div class="stepsinfo">
+            <div id="stepsinfo">
                 <ul>
                     <li>
                         If you got some knowledge with AutoHotkey scripting
@@ -290,13 +280,13 @@
                     <li>Currently there are two custom options:</li>
                     <ul>
                         <li>
-                            <button class="OptionButton">Win</button> +
-                            <button class="OptionButton">Q</button> Exits the
-                            game, in case you got stucked.
+                            <button id="OptionButton">Win</button> +
+                            <button id="OptionButton">Q</button> Exits the game,
+                            in case you got stucked.
                         </li>
                         <li>
-                            <button class="OptionButton">Alt</button> +
-                            <button class="OptionButton">
+                            <button id="OptionButton">Alt</button> +
+                            <button id="OptionButton">
                                 Right Mouse Button
                             </button>
                             Unselects one unit on a group selection and sends a
@@ -307,11 +297,11 @@
             </div>
             <h2>Direct Draw Fix</h2>
             <img
-                class="main"
+                id="main"
                 src="https://github.com/Chandoul/aoeii_easy_manager/blob/main/DDF.png?raw=true"
                 alt=""
             />
-            <div class="stepsinfo">
+            <div id="stepsinfo">
                 <ul>
                     <li>
                         An engine created in order to run old games in the
@@ -322,25 +312,25 @@
                         game experience
                     </li>
                     <li>
-                        <button class="OptionButton">
+                        <button id="OptionButton">
                             Apply the direct draw fix
                         </button>
                         Applies direct draw fix.
                     </li>
                     <li>
-                        <button class="OptionButton">
+                        <button id="OptionButton">
                             Remove the direct draw fix
                         </button>
                         Removes direct draw fix.
                     </li>
                     <li>
-                        <button class="OptionButton">
+                        <button id="OptionButton">
                             Age of Empires II Direct Draw Options
                         </button>
                         Opens the Age of Empires II Direct Draw options window.
                     </li>
                     <li>
-                        <button class="OptionButton">
+                        <button id="OptionButton">
                             The Conquerors Direct Draw Options
                         </button>
                         Opens The Conquerors Direct Draw options window.
@@ -349,30 +339,30 @@
             </div>
             <h2>GameRanger Account Switcher</h2>
             <img
-                class="main"
+                id="main"
                 src="https://github.com/Chandoul/aoeii_easy_manager/blob/main/GRAS.png?raw=true"
                 alt=""
             />
-            <div class="stepsinfo">
+            <div id="stepsinfo">
                 <ul>
                     <li>
-                        <button class="OptionButton">Add</button> Adds an
-                        already logged account to the account list.
+                        <button id="OptionButton">Add</button> Adds an already
+                        logged account to the account list.
                     </li>
                     <li>
-                        <button class="OptionButton">Remove</button> Removes an
+                        <button id="OptionButton">Remove</button> Removes an
                         already added account to the account list.
                     </li>
                     <li>
-                        <button class="OptionButton">→ Login</button> Login with
+                        <button id="OptionButton">→ Login</button> Login with
                         the selected account from the list.
                     </li>
                     <li>
-                        <button class="OptionButton">→ Restart</button> Restarts
+                        <button id="OptionButton">→ Restart</button> Restarts
                         GameRanger.
                     </li>
                     <li>
-                        <button class="OptionButton">+ Create New</button>
+                        <button id="OptionButton">+ Create New</button>
                         Launchs the process where you can create a new
                         GameRanger account.
                     </li>
@@ -380,11 +370,11 @@
             </div>
             <h2>Scenarios</h2>
             <img
-                class="main"
+                id="main"
                 src="https://github.com/Chandoul/aoeii_easy_manager/blob/main/Scx.png?raw=true"
                 alt=""
             />
-            <div class="stepsinfo">
+            <div id="stepsinfo">
                 <ul>
                     <li>
                         Based on a friend request I have added this option to
@@ -393,7 +383,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="hih">
+            <div id="hih">
                 <h2>Hope it helps</h2>
                 <ul>
                     <li>
@@ -415,6 +405,7 @@
                 </ul>
             </div>
         </div>
-        <script src="js/main.js"></script>
+        -->
+        <script src="renderer/main.js"></script>
     </body>
 </html>
