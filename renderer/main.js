@@ -5,7 +5,7 @@ const installerLink =
 const installerSize =
     "https://raw.githubusercontent.com/chandoul/aoeii_em/refs/heads/master/release/aoeii_em_setup_size.txt";
 
-const titleText = "Age of Empires II: AoK & AoC Easy Manager";
+const titleText = "Age of Empires II Easy Manager";
 const aboutText = `Humbly made by Smile 💚`;
 const title = document.getElementById("title");
 const about = document.getElementById("about");
