@@ -1,4 +1,5 @@
 body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     border: 1px solid #e6e6e6;
     background: #eeeeee;
     margin: 30px;
@@ -62,6 +63,7 @@ body {
     font-size: 20px;
     font-weight: bold;
     margin: 10px;
+    margin-bottom: 0px;
     width: 300px;
     background-image: url(assets/png/download.png);
     background-repeat: no-repeat;
@@ -120,4 +122,16 @@ li:hover {
     border-radius: 5px;
     width: calc(100% - 20px);
     max-width: 836px;
+}
+
+#size {
+    font-weight: bold;
+    font-size: 14px;
+    color: #0070e1;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#size:hover {
+    color: #004e9c;
 }
