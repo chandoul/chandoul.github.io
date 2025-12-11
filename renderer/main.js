@@ -28,7 +28,7 @@ async function updatePageInfo() {
     about.innerText = aboutText;
     instsize.innerText = `aoeii_em_setup_latest.exe ( ${sizeRaw} MB )`;
     preview.src =
-        "https://github.com/chandoul/aoeii_em/blob/master/screenshots/aoeii_em.png?raw=true";
+        "https://raw.githubusercontent.com/chandoul/aoeii_em/refs/heads/master/screenshots/aoeii_em.png";
 }
 
 instsize.addEventListener("click", () =>
