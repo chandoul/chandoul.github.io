@@ -11,7 +11,7 @@ const title = document.getElementById("title");
 const about = document.getElementById("about");
 const installButton = document.getElementById("installer");
 const instsize = document.getElementById("size");
-installButton.innerText = "Download";
+const preview = document.getElementById("preview");
 
 updatePageInfo();
 
@@ -24,8 +24,11 @@ async function updatePageInfo() {
 
     title.innerText = `${titleText} v${version[1]}`;
     document.title = title.innerText;
+    installButton.innerText = "Download";
     about.innerText = aboutText;
     instsize.innerText = `aoeii_em_setup_latest.exe ( ${sizeRaw} MB )`;
+    preview.src =
+        "https://github.com/chandoul/aoeii_em/blob/master/screenshots/aoeii_em.png?raw=true";
 }
 
 instsize.addEventListener("click", () =>
