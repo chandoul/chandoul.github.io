@@ -1,137 +1,168 @@
 body {
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    border: 1px solid #e6e6e6;
-    background: #eeeeee;
-    margin: 30px;
-    box-shadow: 5px 5px 10px 5px #00000067;
-    border-radius: 10px;
-    align-items: center;
-    padding: 20px;
-    align-items: center;
-    text-align: center;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	border: 1px solid #e6e6e6;
+	background: #faf0d2;
+	border-radius: 20px;
+	align-items: center;
+	padding: 20px;
+	align-items: center;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	overflow-x: hidden;
+    display: grid;
+    place-items: center;
+}
+
+.video-container {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1; /* يضع الفيديو خلف المحتوى تماماً */
+	overflow: hidden;
 }
 
 #title,
 #HowToUse {
-    text-align: center;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    color: #0084ff;
+	text-align: center;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 50px;
 }
 
 #about {
-    text-align: center;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    color: rgb(35, 141, 43);
-    letter-spacing: 3px;
-    font-weight: bold;
+	text-align: center;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	color: rgb(35, 141, 43);
+	letter-spacing: 3px;
+	font-weight: bold;
 }
 
 .fpabout {
-    text-align: center;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 14px;
+	text-align: center;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	font-size: 14px;
 }
 
 .fp,
 #installer {
-    margin-left: auto;
-    margin-right: auto;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 #fp {
-    width: 50px;
+	width: 50px;
 }
 
 .main {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    box-shadow: 0 1px 2px #00000026;
-    transition: box-shadow 0.5s ease-in-out;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	box-shadow: 0 1px 2px #00000026;
+	transition: box-shadow 0.5s ease-in-out;
 }
 
 .main:hover {
-    box-shadow: 0 10px 50px rgba(0, 0, 0, 0.3);
+	box-shadow: 0 10px 50px rgba(0, 0, 0, 0.3);
 }
 
 #installer {
-    background-color: #1e90ff;
-    border: none;
-    color: white;
-    padding: 12px 30px;
-    cursor: pointer;
-    font-size: 20px;
-    font-weight: bold;
-    margin: 10px;
-    margin-bottom: 0px;
-    width: 300px;
-    background-image: url(assets/png/download.png);
-    background-repeat: no-repeat;
-    background-position: 10px;
-    background-size: 32px;
-    transition: background-position 0.3s ease;
+	background-color: #0172e4;
+	border: none;
+	color: white;
+	padding: 12px 30px;
+	cursor: pointer;
+	font-size: 20px;
+	font-weight: bold;
+	margin: 10px;
+	margin-bottom: 0px;
+	width: 50%;
+	background-image: url(assets/png/download.png);
+	background-repeat: no-repeat;
+	background-position: 10%;
+	background-size: 32px;
+	transition: background-position 0.3s ease;
 }
 
 #installer:hover {
-    background-color: #0070e1;
-    background-position: 258px;
-    text-decoration: underline;
+	background-color: #004e9c;
+	background-position: 90%;
+	text-decoration: underline;
 }
 
 #howtouse {
-    position: sticky;
+	position: sticky;
 }
 #steps {
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    overflow: scroll;
-    text-align: left;
+    margin-top: 50px;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	overflow: scroll;
+	text-align: left;
+    width: 70%;
+    align-self: center;
+    backdrop-filter: blur(10%);
+    background-color: #ffffffda;
+    border-radius: 10px;
+    padding: 50px;
 }
 
 #OptionButton {
-    background-color: rgb(240, 255, 250);
-    border: 1px solid #04aa6d;
-    border-radius: 3px;
-    font-weight: bold;
-    font-size: 14px;
-    padding: 1%;
+	background-color: rgb(240, 255, 250);
+	border: 1px solid #04aa6d;
+	border-radius: 3px;
+	font-weight: bold;
+	font-size: 14px;
+	padding: 1%;
 }
 
 #OptionButton:hover {
-    background-color: #04aa6d;
+	background-color: #04aa6d;
 }
 
 li {
-    margin: 1%;
-    padding: 1%;
+	margin: 1%;
+	padding: 1%;
 }
 
 li:hover {
-    background-color: rgb(209, 209, 209);
+	background-color: rgb(209, 209, 209);
 }
 
 #hih {
-    background-color: rgb(213, 228, 255);
-    border: 1px dashed gray;
-    padding: 1%;
-    text-align: center;
+	background-color: rgb(213, 228, 255);
+	border: 1px dashed gray;
+	padding: 1%;
+	text-align: center;
 }
 
 #preview {
-    margin: 10px;
-    border: 1px solid #b5b5b5;
-    border-radius: 5px;
-    width: calc(100% - 20px);
-    max-width: 836px;
+	margin: 10px;
+	border: 1px solid #b5b5b5;
+	border-radius: 5px;
+	width: calc(100% - 20px);
+	max-width: 836px;
 }
 
 #size {
-    font-weight: bold;
-    font-size: 14px;
-    color: #0070e1;
-    text-decoration: underline;
-    cursor: pointer;
+	font-weight: bold;
+	font-size: 14px;
+	color: #000000;
+	text-decoration: underline;
+	cursor: pointer;
 }
 
 #size:hover {
-    color: #004e9c;
+	color: #004e9c;
+}
+
+#musicBtn {
+    margin-top: 20px;
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    width: 50px;
+    height: 30px;
+	cursor: pointer;
 }
